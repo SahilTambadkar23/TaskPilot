@@ -182,7 +182,7 @@ function TaskList({
         <CardTitle>Today's Plan</CardTitle>
       </CardHeader>
       <CardContent>
-        {tasks.length > 0 ? (
+        {tasks && tasks.length > 0 ? (
           <ul className="space-y-3">
             {tasks.map((task) => (
               <TaskItem
@@ -258,7 +258,7 @@ export default function Home() {
             />
           </div>
           <div className="hidden md:block">
-            <TimelineView tasks={currentSchedule.tasks} />
+            <TimelineView tasks={currentSchedule.tasks || []} />
           </div>
         </div>
       </main>
