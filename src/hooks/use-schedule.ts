@@ -27,7 +27,7 @@ export function useSchedule() {
       const storedData = localStorage.getItem(LOCAL_STORAGE_KEY);
       if (storedData) {
         const parsedData = JSON.parse(storedData);
-        if (parsedData.schedules && parsedData.schedules.length > 0 && parsedData.currentScheduleId) {
+        if (parsedData.schedules && parsedData.schedules.length > 0 && parsedData.currentScheduleId && parsedData.schedules.find((s: Schedule) => s.id === parsedData.currentScheduleId)) {
           setSchedules(parsedData.schedules);
           setCurrentScheduleId(parsedData.currentScheduleId);
         } else {
