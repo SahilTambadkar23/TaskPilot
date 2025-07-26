@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import type { Schedule, Task } from '@/types';
 import { useToast } from './use-toast';
 
-const LOCAL_STORAGE_KEY = 'chronos-flow-schedules';
+const LOCAL_STORAGE_KEY = 'taskpilot-schedules';
 
 const createDefaultSchedule = (): Schedule => ({
   id: crypto.randomUUID(),

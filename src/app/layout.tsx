@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Chronos Flow',
-  description: 'Organize your day with calm and focus.',
+  title: 'TaskPilot',
+  description: 'Your AI-powered task co-pilot.',
 };
 
 export default function RootLayout({

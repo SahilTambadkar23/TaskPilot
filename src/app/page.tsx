@@ -47,7 +47,7 @@ function Header({
         <div className="flex items-center gap-2">
           <Clock className="h-6 w-6 text-primary" />
           <h1 className="text-xl font-bold font-headline text-foreground">
-            Chronos Flow
+            TaskPilot
           </h1>
         </div>
         <div className="flex items-center gap-2 md:gap-4">
